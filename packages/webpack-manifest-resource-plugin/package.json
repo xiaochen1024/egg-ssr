@@ -1,0 +1,48 @@
+{
+  "name": "webpack-manifest-resource-plugin",
+  "version": "4.2.3",
+  "description": "webpack manifest resource dependencies plugin",
+  "keywords": [
+    "webpack",
+    "manifest",
+    "webpack-manifest-plugin"
+  ],
+  "dependencies": {
+    "eslint-config-eslint": "^5.0.0",
+    "fs-extra": "^7.0.0",
+    "lodash": ">=3.5 <5",
+    "mutexify": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.0.1",
+    "eslint-config-eslint": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "fix": "eslint --fix .",
+    "test": "mocha test",
+    "ci": "npm run lint && npm run cov"
+  },
+  "files": [
+    "index.js",
+    "utils",
+    "lib",
+    "tool"
+  ],
+  "ci": {
+    "version": "6, 8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hubcarl/webpack-manifest-resource-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hubcarl/webpack-manifest-resource-plugin/issues"
+  },
+  "homepage": "https://github.com/hubcarl/webpack-manifest-resource-plugin#readme",
+  "author": "hubcarl@126.com",
+  "license": "MIT"
+}

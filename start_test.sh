@@ -1,0 +1,1 @@
+EGG_SERVER_ENV=test NODE_ENV=production npm run start

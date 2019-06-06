@@ -1,0 +1,71 @@
+{
+  "name": "egg-view-react-ssr",
+  "version": "2.2.4",
+  "description": "react server side render for egg",
+  "eggPlugin": {
+    "name": "reactssr"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "react",
+    "react server side render"
+  ],
+  "dependencies": {
+    "egg-bin": "^4.4.1",
+    "server-side-render-resource": "^1.0.2"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.0.0",
+    "conventional-changelog-cli": "^2.0.1",
+    "egg": "^2.9.0",
+    "egg-bin": "^4.7.0",
+    "egg-ci": "^1.6.0",
+    "egg-mock": "^3.7.0",
+    "eslint": "^5.0.1",
+    "eslint-config-egg": "^7.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "supertest": "^3.0.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles",
+    "autod": "autod"
+  },
+  "files": [
+    "app",
+    "lib",
+    "config",
+    "agent.js",
+    "app.js"
+  ],
+  "ci": {
+    "version": "6, 8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hubcarl/egg-view-react-ssr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hubcarl/egg/issues"
+  },
+  "homepage": "https://github.com/hubcarl/egg-view-react-ssr#readme",
+  "author": "hubcarl@126.com",
+  "license": "MIT"
+}

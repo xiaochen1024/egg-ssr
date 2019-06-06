@@ -1,0 +1,22 @@
+{
+  "name": "egg-webpack-react",
+  "version": "1.0.0",
+  "description": "egg plugin for webpack development server",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "eggPlugin": {
+    "name": "webpack",
+    "env": [
+      "local"
+    ]
+  },
+  "devDependencies": {
+    "chalk": "^2.4.1",
+    "kcors": "^2.2.1",
+    "koa": "^2.5.1",
+    "koa-proxy": "^0.9.0",
+    "koa-webpack": "^5.0.2"
+  },
+  "dependencies": {}
+}
